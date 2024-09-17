@@ -371,6 +371,7 @@ h3 {
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .project-box > i {
@@ -541,6 +542,7 @@ footer {
     row-gap: 30px;
     background: #f8f8f8;
     padding-block: 40px 60px;
+    width: 100%;
 }
 
 .top-footer p {
@@ -723,6 +725,8 @@ footer {
 
     .project-box {
         width: 100%;
+        padding: 10px;
+        height: 430px;
     }
 
     .form-inputs {
@@ -732,4 +736,24 @@ footer {
     .input-field {
         width: 100%;
     }
+
+
+    .project-box > h4 {
+        text-align: center;
+    }
+
+    .project-box label {
+        font-size: 18px;
+    }
+
+    #skills-area {
+        width: 95%;
+    }
+
+    .contact-info p {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
 }

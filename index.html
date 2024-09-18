@@ -227,12 +227,12 @@
                     <div class="col">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Enter your name"/>
-                                <input type="text" class="input-field" placeholder="Enter your email"/>
+                                <input type="text" class="input-field" id="sender-name" placeholder="Enter your name"/>
+                                <input type="text" class="input-field" id="sender-email"placeholder="Enter your email"/>
                             </div>
 
                             <div class="text-area">
-                                <textarea placeholder="Enter you message"></textarea>
+                                <textarea id="message" placeholder="Enter you message"></textarea>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
 
                 <div class="row" id="form-button-area">
                     <div class="form-button">
-                        <button class="btn">Send me<i class="uil uil-message"></i></button>
+                        <button type="submit" class="btn" onclick="sendMail()">Send me<i class="uil uil-message"></i></button>
                     </div>
                 </div>
             </section>
@@ -280,6 +280,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--Typed.js-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--Script-->
     <script src="main.js"></script>
 </body>

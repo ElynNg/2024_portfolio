@@ -92,11 +92,20 @@ function scrollActive() {
   function sendMail() {
     emailjs.init('zP8FLCLloUFr_Q6po');
 
+    let name = document.getElementById('sender-name').value;
+    let message = document.getElementById('message').value;
+    let email = document.getElementById('sender-email').value;
+
+    if (name === '' || message === '' || email === ''){
+        alert('Please fill in all the fields before submitting.');
+        return;
+    }
+
     emailjs.send('service_ax3l8s5', 'template_tzqacbb', {
         to_name: "Elyn Nguyen",
-        from_name: "test",
-        message: "test",
-        from_mail: "ndym1489@outlook.com",
+        from_name: name,
+        message: message,
+        from_mail: email
         })
         .then(function(response) {
             alert('Email sent successfully!');

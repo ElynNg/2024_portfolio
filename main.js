@@ -9,6 +9,15 @@ function showMenu() {
     }
 }
 
+document.querySelectorAll('.nav-list').forEach(item => {
+    item.addEventListener('click', function() {
+        var menuBtn = document.getElementById('myNavMenu');
+        if (menuBtn.classList.contains('responsive')) {
+            menuBtn.classList.remove('responsive');
+        }
+    });
+});
+
 window.onscroll = function() { headerShadow() };
 
 function headerShadow() {
